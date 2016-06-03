@@ -1,0 +1,164 @@
+@import "index.scss";
+.m-index{
+    height: 100%;
+    width: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    & > * {
+    width: 100%;
+    }
+    .m-index-container{
+        @include flex();
+    }
+    header{
+//      position: absolute;
+//      z-index: 99;
+       height: .44rem;
+       background: #fe7575; 
+       ul{
+           @include flexbox();
+           @include flex-direction(row);
+           li{
+              &:nth-child(1),&:nth-child(3){
+                  width:.77rem;
+                  text-align: center;
+                  line-height: .44rem;
+                  height: .44rem;
+                  font-size: .22rem;
+                  color: #fff;
+              }
+               &:nth-child(2){
+                   @include flex();
+                   @include flexbox();
+                   height: .44rem;
+                   @include justify-content(center);
+                   @include align-items(center);
+                   font-size: .2rem;
+                   color: #fff;
+               }
+           }
+       }
+    }
+    .nav{
+        position: fixed;
+        display: none;
+        height: .35rem;
+                background: #f7f7f7;
+z-index: 9999;
+//background: red;
+                ul{
+                    @include flexbox();
+                    li{
+                        font-size: .16rem;
+                        @include flex();
+                        @include flexbox();
+                        height: .35rem;
+                        @include justify-content(center);
+                        @include align-items(center);
+                        @include box-sizing(border-box);
+                    &.active{
+                        border-bottom: .02rem solid #ff5e5e;
+                        }
+                    }
+                }
+    }
+    section{
+        @include flex();
+        background: #f7f7f7 ;
+        width: 100% !important;
+//      overflow: hidden;
+        div{
+            #index-swiper{
+                @include box-sizing(border-box);
+                @include border(1px 0 0 0, #909090);
+                height: 1.5rem;
+                background: pink;
+                overflow: hidden;
+                img{
+                    height: 1.5rem;
+                }
+            }
+            nav{
+                height: .35rem;
+                background: #f7f7f7;
+                ul{
+                    @include flexbox();
+                    li{
+                        font-size: .16rem;
+                        @include flex();
+                        @include flexbox();
+                        height: .35rem;
+                        @include justify-content(center);
+                        @include align-items(center);
+                        @include box-sizing(border-box);
+                    &.active{
+                        border-bottom: .02rem solid #ff5e5e;
+                        }
+                    }
+                }
+            }
+            .container{
+                width: 100%;
+                ul{
+                    width: 100%;
+                    li{
+                        width: 100%;
+                            display: block;
+                            height: 2.5rem;
+                            p{
+                                text-align: center;
+                                font-size: .16rem;
+                                color: #000;
+                                height: .3rem;
+                                line-height: .4rem;
+                            }
+                            b{
+                                color: #808080;
+                                font-size: .16rem;
+                                text-align: center;
+                                display: block;
+                            }
+                    }
+                }
+            }
+        }
+    }
+    
+    footer{
+        @include box-sizing(border-box);
+        @include border(1px 0 0 0, #909090);
+        height: .49rem;
+        background: #ecded8;
+        ul{
+            width: 100%;
+            height: 100%;
+           @include flexbox();
+           li{
+                &.active b,
+                &.active i {
+                  color: #ff5d5d !important;
+                }
+                @include flex();
+                @include flexbox();
+                @include justify-content(center);
+                @include align-items(center);
+                @include flex-direction(column);
+                height: .49rem;
+                b, i {
+                  display: block;
+                  color: #909090;
+                  font-weight: normal;
+                }
+                i {
+                   font-size: .26rem;
+                }
+                b {
+                  
+                }
+                &:nth-child(3) i{
+                    font-size: .36rem;
+                }
+           } 
+        }
+    }
+}

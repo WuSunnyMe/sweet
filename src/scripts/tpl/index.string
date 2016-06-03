@@ -1,0 +1,26 @@
+<div class="m-index">
+	<div class="m-index-container"></div>
+	<footer>
+		<ul>
+			<li class="active" action-type = "switch.view" data-tag="home">
+				<i class="yo-ico">&#xe63d;</i>
+				<b>首页</b>
+			</li>
+			<li action-type = "switch.view" data-tag="find">
+				<i class="yo-ico">&#xe665;</i>
+				<b>发现</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe601;</i>
+			</li>
+			<li action-type = "switch.view" data-tag="fenlei">
+				<i class="yo-ico">&#xe61b;</i>
+				<b>好货</b>
+			</li>
+			<li action-type = "switch.view" data-tag="my">
+				<i class="yo-ico">&#xe658;</i>
+				<b>我</b>
+			</li>
+		</ul>
+	</footer>
+</div>

@@ -1,0 +1,10 @@
+<div class="swiper-container" id = "guide-swiper">
+	 <div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="../../../images/splash1.png"/></div>
+		<div class="swiper-slide"><img src="../../../images/splash2.png"/></div>
+		<div class="swiper-slide"><img src="../../../images/splash3.png"/></div>
+		<div action-type = "goto.index" class="swiper-slide"><img src="../../../images/load_home.png"/></div>
+	</div>
+	<!-- 如果需要分页器 -->
+	<div class="swiper-pagination"></div>
+</div>

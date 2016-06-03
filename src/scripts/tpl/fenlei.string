@@ -1,0 +1,8 @@
+<div class="fenlei-index">
+	<header>
+		<ul>
+			<li class="yo-ico">&#xf0292;</li>
+			<li><input type="text" name="search" id="search" placeholder="请输入商品名称" /></li>
+		</ul>
+	</header>
+</div>

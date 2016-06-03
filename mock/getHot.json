@@ -1,0 +1,21 @@
+{
+  "ret": true,
+  "errCode": 0,
+  "data": [
+    {
+    "imgSrc":"/sweet/images/2.jpg",
+    "title":"随身携带的小清凉",
+    "like":"&#xe605;0"
+    },
+    {
+    "imgSrc":"/sweet/images/3.jpg",
+    "title":"随身携带的小清凉",
+    "like":"&#xe605;0"
+    },
+    {
+    "imgSrc":"/sweet/images/4.jpg",
+    "title":"随身携带的小清凉",
+    "like":"&#xe605;0"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+<div class="home-index">
+	<header>
+	<ul>
+		<li>
+			<i class="yo-ico">&#xe937;</i>
+		</li>
+		<li>
+			甜圈圈
+		</li>
+		<li action-type="exit"><i class="yo-ico">&#xe600;</i></li>
+	</ul>
+</header>
+<div class="nav">
+	<ul>
+		<li>最新</li>
+		<li class="active">热门</li>
+		<li>精选</li>
+	</ul>
+</div>
+<section spa-widget="scroll">
+	<div>
+		<div class="swiper-container" id="index-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../../../images/1.jpg" /></div>
+				<div class="swiper-slide"><img src="../../../images/1.jpg" /></div>
+				<div class="swiper-slide"><img src="../../../images/1.jpg" /></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<nav>
+			<ul id="nav">
+				<li class="active" action-type="switch.view">热门</li>
+				<li action-type="switch.view">最新</li>
+				<li action-type="switch.view">精选</li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="swiper-container" id="container-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<ul>
+							<li>
+								<img width="100%" src="../../../images/2.jpg" />
+								<p>随身携带的小清凉</p>
+								<b class="yo-ico">&#xe605;0</b>
+							</li>
+							<li>
+								<img width="100%" src="../../../images/2.jpg" />
+								<p>随身携带的小清凉</p>
+								<b class="yo-ico">&#xe605;0</b>
+							</li>
+							<li>
+								<img width="100%" src="../../../images/2.jpg" />
+								<p>随身携带的小清凉</p>
+								<b class="yo-ico">&#xe605;0</b>
+							</li>
+							<li>
+								<img width="100%" src="../../../images/2.jpg" />
+								<p>随身携带的小清凉</p>
+								<b class="yo-ico">&#xe605;0</b>
+							</li>
+							<li>
+								<img width="100%" src="../../../images/2.jpg" />
+								<p>随身携带的小清凉</p>
+								<b class="yo-ico">&#xe605;0</b>
+							</li>
+							<li>
+								<img width="100%" src="../../../images/3.jpg" />
+								<p>随身携带的小清凉</p>
+								<b class="yo-ico">&#xe605;0</b>
+							</li>
+							<li>
+								<img width="100%" src="../../../images/4.jpg" />
+								<p>随身携带的小清凉</p>
+								<b class="yo-ico">&#xe605;0</b>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-slide">热门</div>
+					<div class="swiper-slide">精选</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
