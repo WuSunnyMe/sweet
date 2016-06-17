@@ -1,0 +1,25 @@
+<header class="category-header">商品列表</header>
+<section class="category-">
+	<ul>
+		<li>
+			<img src="../../../images/7.jpg"/>
+			<div class="title">
+				不拉不拉不拉不拉
+			</div>
+			<div class="price">￥1212</div>
+		</li>
+		<li></li>
+		<li>
+			<img src="../../../images/7.jpg"/>
+			<div class="title">
+				不拉不拉不拉不拉
+			</div>
+			<div class="price">
+				<b>￥1212</b>
+				<span></span>
+			</div>
+		</li>
+	</ul>
+</section>
+
+

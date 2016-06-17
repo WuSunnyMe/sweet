@@ -1,0 +1,86 @@
+.se-box{
+    width: 100%;
+    height: 100%;
+    .close-btn{
+        font-size: .3rem;
+        color: #999;
+    }
+}
+
+.my-se{
+    width: 2.56rem;
+    height: 3.44rem;
+    margin: 1.2rem auto;
+    position: relative;
+    .lo{
+        li{
+            border: .01rem solid #d5d5d5;
+            height: .35rem;
+            background: #fff;
+            border-radius: .05rem;
+            margin: .1rem 0;
+            i{
+                display: inline-block;
+                font-size: .2rem;
+                color: #989898;
+                width: .3rem;
+                line-height: .28rem;
+                text-align: center;
+            }
+            input{
+                border: 0;
+                font-size: .16rem;
+                line-height: .35rem;
+            }
+        }
+    }
+    #login{
+        margin-top: .18rem;
+        height: .3rem;
+        background: #ff5e5e;
+        width: 100%;
+        border-radius: .05rem;
+        text-align: center;
+        line-height: .3rem;
+        color: #fff;
+        font-size: .16rem;
+    }
+    .foget{
+        @include flexbox();
+        color: #a1a1a1;
+        line-height: .4rem;
+        .reg{
+            @include flex();
+        }
+        .fog-pwd{
+             @include flex();
+             text-align: right;
+        }
+    }
+    .login-s{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        .toLogin{
+            text-align: center;
+        }
+        .login-style{
+            margin-top: .35rem;
+            ul{
+                @include flexbox();
+                @include flex-direction(row);
+                li{
+                    width: .44rem;
+                    @include flex();
+                    img{
+                        
+                        width: .44rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}
+    

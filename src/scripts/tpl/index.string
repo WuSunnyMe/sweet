@@ -17,7 +17,7 @@
 				<i class="yo-ico">&#xe61b;</i>
 				<b>好货</b>
 			</li>
-			<li action-type = "switch.view" data-tag="my">
+			<li action-type = "goto.my" data-tag="my">
 				<i class="yo-ico">&#xe658;</i>
 				<b>我</b>
 			</li>

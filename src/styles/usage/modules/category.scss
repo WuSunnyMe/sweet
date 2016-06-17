@@ -1,0 +1,23 @@
+.category-header{
+    text-align: center;
+    line-height: .44rem;
+    font-size: .2rem;
+    color: #fff;
+}
+section{
+    background:#f7f7f7;
+    ul{
+        @include flexbox();
+        li{
+            img{
+                width: 100%;
+            }
+            &:nth-child(2){
+                width: .05rem;
+            }
+            &:nth-child(1),&:nth-child(3){
+                @include flex();
+            }
+        }
+    }
+}

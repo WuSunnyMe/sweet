@@ -1,1 +1,34 @@
-<div>my</div>
+<section class="se-box">
+	<div class="close-btn yo-ico" action-type = "close-my">
+		&#xe648;
+	</div>
+	<div class="my-se">
+		<ul class="lo">
+			<li>
+				<i class="yo-ico">&#xe60b;</i>
+				<input type="text" id="phone" placeholder="请输入手机号" />
+			</li>
+			<li>
+				<i class="yo-ico">&#xe60c;</i>
+				<input type="password" id="pwd" placeholder="请输入密码" />
+			</li>
+		</ul>
+		<div id = "login" >登录</div>
+		<div class="foget">
+			<span class="reg">没有账号？马上注册</span>
+			<p class="fog-pwd">忘记密码？</p>
+		</div>
+		<div class="login-s">
+			<div class="toLogin">
+				社交账号一键登录
+			</div>
+			<div class="login-style">
+				<ul>
+					<li><img src="../../../images/sina.jpg"/></li>
+					<li><img src="../../../images/weixin.jpg"/></li>
+					<li><img src="../../../images/qq.jpg"/></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

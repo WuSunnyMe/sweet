@@ -1,14 +1,76 @@
-header{
-    ul{
-        margin: .02rem;
+.fenlei-index{
+    background: #efefef;
+    @include flexbox();
+    width: 100%;
+    height: 100%;
+    @include flex-direction(column);
+    .back-header{
+        height: .44rem;
+        @include flexbox();
         li{
-            margin: 0;
-            padding: 0;
+            &:nth-child(1){
+                width: .66rem;
+                text-indent: .15rem;
+                font-size: .22rem;
+            }
+            &:nth-child(2){
+                @include flex(1);
+            }
             input{
-                width: 2.52rem;
-                height: .29rem;
+                width: 2.8rem;
+                height: 0.29rem;
                 border-radius: .05rem;
                 border: 0;
+                font-size: .16rem;
+                text-indent: 1rem;
+                line-height: 0.32rem;
+            }
+        }
+    }
+    .fenlei-section{
+        @include flex();
+        @include flexbox();
+        height: 100%;
+        ul{
+            height: 100%;
+            width: .75rem;
+            li{
+                height: .45rem;
+                border-bottom: .01rem solid #e1e1e1;
+                border-left: .05rem solid #efefef;
+                box-sizing: border-box;
+                text-align: center;
+                line-height: .45rem;
+                font-size: .16rem;
+                color: #828282;
+                &.active{
+                    color: #111;
+                    border-left: .05rem solid #ff5e5e;
+                    background: #fff;
+                }
+            }
+        }
+        #fenlei-swiper{
+            @include flex();
+            background: #fff;
+            ul{
+                width: 100%;
+                height: 1.1rem;
+                @include flexbox();
+                li{
+                    background: #fff;
+                    border: 0;
+                    @include flex();
+                    height: 1.1rem;
+                    width: .8rem;
+                   img{
+                       width: .8rem;
+                       height: .8rem;
+                   }
+                   p{
+                       line-height: .3rem;
+                   }
+                }
             }
         }
     }

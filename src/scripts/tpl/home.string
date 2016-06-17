@@ -1,4 +1,4 @@
-<div class="home-index">
+<!--<div class="home-index">-->
 	<header>
 	<ul>
 		<li>
@@ -10,11 +10,11 @@
 		<li action-type="exit"><i class="yo-ico">&#xe600;</i></li>
 	</ul>
 </header>
-<div class="nav">
+<div class="nav" data-scroll-id="myScroll" spa-widget="scroll">
 	<ul>
-		<li>最新</li>
-		<li class="active">热门</li>
-		<li>精选</li>
+		<li action-type = "switch.view">最新</li>
+		<li action-type = "switch.view" class="active">热门</li>
+		<li action-type = "switch.view">精选</li>
 	</ul>
 </div>
 <section spa-widget="scroll">
@@ -38,50 +38,70 @@
 		<div class="container">
 			<div class="swiper-container" id="container-swiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<ul>
-							<li>
-								<img width="100%" src="../../../images/2.jpg" />
-								<p>随身携带的小清凉</p>
-								<b class="yo-ico">&#xe605;0</b>
-							</li>
-							<li>
-								<img width="100%" src="../../../images/2.jpg" />
-								<p>随身携带的小清凉</p>
-								<b class="yo-ico">&#xe605;0</b>
-							</li>
-							<li>
-								<img width="100%" src="../../../images/2.jpg" />
-								<p>随身携带的小清凉</p>
-								<b class="yo-ico">&#xe605;0</b>
-							</li>
-							<li>
-								<img width="100%" src="../../../images/2.jpg" />
-								<p>随身携带的小清凉</p>
-								<b class="yo-ico">&#xe605;0</b>
-							</li>
-							<li>
-								<img width="100%" src="../../../images/2.jpg" />
-								<p>随身携带的小清凉</p>
-								<b class="yo-ico">&#xe605;0</b>
-							</li>
-							<li>
-								<img width="100%" src="../../../images/3.jpg" />
-								<p>随身携带的小清凉</p>
-								<b class="yo-ico">&#xe605;0</b>
-							</li>
-							<li>
-								<img width="100%" src="../../../images/4.jpg" />
-								<p>随身携带的小清凉</p>
-								<b class="yo-ico">&#xe605;0</b>
-							</li>
-						</ul>
+					<div class="swiper-slide" spa-widget="scroll" data-scroll-id="indexScroll">
+						<div class="main" ms-visible="!isShowLoading">
+							 <div class="head">
+					              <img src="/images/arrow.png"/>
+					              <span>下拉刷新...</span>
+					          </div>
+							<ul ms-repeat-value = "getHot">
+								<li>
+									<img width="100%" ms-src="value.imgSrc" action-type="x" ms-attr-data-id="value.id" />
+									<p ms-text="value.title"></p>
+									<b class="yo-ico" ms-test="value.like">&#xe605;0</b>
+								</li>
+							</ul>
+							<div class="foot">
+						        <img src="/images/arrow.png"/>
+						        <span>上拉加载更多...</span>
+						    </div>
+						</div>
 					</div>
-					<div class="swiper-slide">热门</div>
-					<div class="swiper-slide">精选</div>
+					<div class="swiper-slide" spa-widget="scroll">
+						<div class="main">
+							<ul>
+								<li>
+									<img width="100%" src="../../../images/2.jpg" />
+									<p>随身携带的小清凉</p>
+									<b class="yo-ico">&#xe605;0</b>
+								</li>
+								<li>
+									<img width="100%" src="../../../images/3.jpg" />
+									<p>随身携带的小清凉</p>
+									<b class="yo-ico">&#xe605;0</b>
+								</li>
+								<li class="last-li">
+									<img width="100%" src="../../../images/4.jpg" />
+									<p>随身携带的小清凉</p>
+									<b class="yo-ico">&#xe605;0</b>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="swiper-slide" spa-widget="scroll">
+						<div class="main">
+							<ul>
+								<li>
+									<img width="100%" src="../../../images/2.jpg" />
+									<p>随身携带的小清凉</p>
+									<b class="yo-ico">&#xe605;0</b>
+								</li>
+								<li>
+									<img width="100%" src="../../../images/3.jpg" />
+									<p>随身携带的小清凉</p>
+									<b class="yo-ico">&#xe605;0</b>
+								</li>
+								<li class="last-li">
+									<img width="100%" src="../../../images/4.jpg" />
+									<p>随身携带的小清凉</p>
+									<b class="yo-ico">&#xe605;0</b>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-</div>
+<!--</div>-->

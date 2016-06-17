@@ -1,4 +1,7 @@
 @import "/index.scss";
+.last-li{
+    height: 2.99rem !important;
+}
     header{
 //      position: absolute;
 //      z-index: 99;
@@ -33,8 +36,7 @@
         display: none;
         height: .35rem;
                 background: #f7f7f7;
-z-index: 9999;
-//background: red;
+                z-index: 9999;
                 ul{
                     @include flexbox();
                     li{
@@ -52,6 +54,7 @@ z-index: 9999;
                 }
     }
     section{
+        width: 100%;
         @include flex();
         background: #f7f7f7 ;
         width: 100% !important;
@@ -61,7 +64,6 @@ z-index: 9999;
                 @include box-sizing(border-box);
                 @include border(1px 0 0 0, #909090);
                 height: 1.5rem;
-                background: pink;
                 overflow: hidden;
                 img{
                     height: 1.5rem;
@@ -87,6 +89,50 @@ z-index: 9999;
                 }
             }
             .container{
+                .main{
+                    height: 100%;
+                    .head {
+            height: .3rem;
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(center);
+        }
+        .head {
+           display: none;
+        }
+        .head img {
+            width: .14rem;
+            height: .14rem;
+            display: inline-block;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            transition: transform 150ms;
+            -webkit-transition: transform 150ms;
+        }
+        .up {
+            transform: rotate(360deg) !important;
+            -webkit-transform: rotate(360deg) !important;
+        }
+        .foot {
+            height: .49rem;
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(center);
+        }
+        .foot img {
+            width: .14rem;
+            height: .14rem;
+            display: inline-block;
+            /*transform: rotate(0deg);*/
+            /*-webkit-transform: rotate(0deg);*/
+            transition: transform 150ms;
+            -webkit-transition: transform 150ms;
+        }
+        .down {
+            transform: rotate(180deg) !important;
+            -webkit-transform: rotate(180deg) !important;
+        }
+                }
                 width: 100%;
                 ul{
                     width: 100%;
@@ -113,3 +159,9 @@ z-index: 9999;
         }
        
     }
+    
+//#container-swiper{
+//  position: absolute;
+//}
+
+

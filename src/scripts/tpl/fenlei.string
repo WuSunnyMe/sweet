@@ -1,8 +1,45 @@
 <div class="fenlei-index">
 	<header>
-		<ul>
+		<ul class="back-header">
 			<li class="yo-ico">&#xf0292;</li>
 			<li><input type="text" name="search" id="search" placeholder="请输入商品名称" /></li>
 		</ul>
 	</header>
+	<section class="fenlei-section">
+		<ul id = "fenlei-nav">
+			<li action-type = "switch.fenlei" class="active">衣服</li>
+			<li action-type = "switch.fenlei">鞋子</li>
+			<li action-type = "switch.fenlei">饰品</li>
+			<li action-type = "switch.fenlei">帽子</li>
+			<li action-type = "switch.fenlei">袜子</li>
+			<li action-type = "switch.fenlei">手套</li>
+			<li action-type = "switch.fenlei">食品</li>
+			<li action-type = "switch.fenlei">数码</li>
+		</ul>
+		<div class="swiper-container" id="fenlei-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<ul>
+						<li action-type = "goto.detail"><img src="../../../images/5.jpg"/><p>韩版</p></li>
+						<li><img src="../../../images/5.jpg"/><p>韩版</p></li>
+						<li><img src="../../../images/5.jpg"/><p>韩版</p></li>
+					</ul>
+					<ul>
+						<li><img src="../../../images/5.jpg"/><p>韩版</p></li>
+						<li><img src="../../../images/5.jpg"/><p>韩版</p></li>
+						<li><img src="../../../images/5.jpg"/><p>韩版</p></li>
+					</ul>
+				</div>
+				<div class="swiper-slide">鞋子</div>
+				<div class="swiper-slide">饰品</div>
+				<div class="swiper-slide">帽子</div>
+				<div class="swiper-slide">袜子</div>
+				<div class="swiper-slide">手套</div>
+				<div class="swiper-slide">食品</div>
+				<div class="swiper-slide">数码</div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+	</section>
 </div>

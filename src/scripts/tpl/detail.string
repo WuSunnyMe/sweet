@@ -1,0 +1,43 @@
+<header class="detail-header">
+	<ul>
+		<li class="yo-ico" action-type = "back">&#xe604;</li>
+		<li>商品详情</li>
+	</ul>
+</header>
+<section class="detail-section">
+	<div class="goods">
+		<img src="../../../images/7.jpg"/>
+		<div class="d-title">
+			大号木制桌面化妆品收纳盒抽屉式梳妆台桌子上办公用品储物置物架
+		</div>
+		<div class="price">￥18.00</div>
+		<div class="num">
+			<strong>选择，颜色分类</strong>
+			<b action-type = "goto.change">>&nbsp;</b>
+		</div>
+		<div class="detail-box">
+			<div class="pro-nav">
+				<ul>
+					<li class="active">商品详情</li>
+					<li>评价</li>
+				</ul>
+			</div>
+		</div>
+		<div class="swiper-container" id="detail-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">商品详情</div>
+				<div class="swiper-slide">评价</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</footer>
+
+
+

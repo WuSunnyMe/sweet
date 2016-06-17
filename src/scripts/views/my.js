@@ -2,5 +2,11 @@
 var tplMy = require('../tpl/my.string');
 // 定义一个视图
 SPA.defineView('my', {
-  html: tplMy
+  html: tplMy,
+  plugins: ['delegated'],
+  bindActions:{
+  	'close-my':function(){
+  		this.hide();
+  	}
+  }
 });
